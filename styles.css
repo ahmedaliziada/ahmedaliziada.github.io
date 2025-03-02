@@ -1,14 +1,14 @@
 /* Base Styles and Variables */
 :root {
-    --primary-color: #4a6baf;
-    --secondary-color: #8c44ad;
-    --accent-color: #3498db;
-    --creative-color: #e74c3c;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
-    --background-color: #f9f9f9;
-    --text-color: #333;
-    --font-family: 'Shadows Into Light', cursive;
+    --primary-color: #FFD700; /* Yellow */
+    --secondary-color: #FFA500; /* Orange */
+    --accent-color: #FF8C00; /* Dark Orange */
+    --creative-color: #FFD700; /* Yellow */
+    --dark-color: #1C1C1C; /* Dark */
+    --light-color: #F5F5F5; /* Light Grey */
+    --background-color: #121212; /* Dark Background */
+    --text-color: #E0E0E0; /* Light Text */
+    --font-family: 'Roboto', sans-serif; /* Professional Font */
     --transition: all 0.3s ease;
 }
 
@@ -63,7 +63,7 @@ section {
 }
 
 .section-header p {
-    color: #666;
+    color: #B0B0B0;
     font-size: 1.1rem;
 }
 
@@ -81,7 +81,7 @@ section {
 
 .btn.primary {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: var(--dark-color);
 }
 
 .btn.secondary {
@@ -97,7 +97,7 @@ section {
 
 .btn.secondary:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--dark-color);
     transform: translateY(-3px);
 }
 
@@ -108,7 +108,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(28, 28, 28, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
@@ -138,7 +138,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--light-color);
     font-weight: 500;
     transition: var(--transition);
     position: relative;
@@ -171,7 +171,7 @@ nav {
 .hamburger .line {
     width: 25px;
     height: 3px;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     margin: 5px;
     transition: var(--transition);
 }
@@ -181,7 +181,7 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(242,242,242,0.8) 100%);
+    background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(18, 18, 18, 0.8) 100%);
     margin-top: 60px;
 }
 
@@ -206,13 +206,13 @@ nav {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 20px;
-    color: #666;
+    color: #B0B0B0;
 }
 
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;
-    color: #777;
+    color: #C0C0C0;
 }
 
 .highlight {
@@ -239,7 +239,7 @@ nav {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-    border: 5px solid white;
+    border: 5px solid var(--dark-color);
     position: relative;
 }
 
@@ -251,7 +251,7 @@ nav {
 
 /* Journey Timeline Section */
 .journey {
-    background-color: white;
+    background-color: var(--dark-color);
 }
 
 .timeline {
@@ -290,7 +290,7 @@ nav {
 
 .timeline-content {
     padding: 20px;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 6px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -307,7 +307,7 @@ nav {
     position: absolute;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent var(--background-color);
     top: 20px;
     right: -20px;
 }
@@ -317,7 +317,7 @@ nav {
     position: absolute;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--background-color) transparent transparent;
     top: 20px;
     left: -20px;
 }
@@ -327,7 +327,7 @@ nav {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: white;
+    background-color: var(--background-color);
     border: 4px solid var(--primary-color);
     border-radius: 50%;
     top: 20px;
@@ -350,11 +350,11 @@ nav {
 
 .timeline-content h3 {
     margin-bottom: 10px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .timeline-content p {
-    color: #666;
+    color: #B0B0B0;
     margin-bottom: 15px;
 }
 
@@ -372,7 +372,7 @@ nav {
 
 /* Skills Section */
 .skills {
-    background-color: #f5f8fa;
+    background-color: var(--background-color);
 }
 
 .skills-container {
@@ -383,7 +383,7 @@ nav {
 
 .skill-category h3 {
     margin-bottom: 20px;
-    color: var(--dark-color);
+    color: var(--light-color);
     padding-bottom: 10px;
     border-bottom: 2px solid var(--light-color);
 }
@@ -428,7 +428,7 @@ nav {
 
 /* Portfolio Section */
 .portfolio {
-    background-color: white;
+    background-color: var(--dark-color);
 }
 
 .portfolio-filters {
@@ -451,7 +451,7 @@ nav {
 
 .filter-btn.active, .filter-btn:hover {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: var(--dark-color);
 }
 
 .portfolio-grid {
@@ -490,16 +490,16 @@ nav {
 
 .portfolio-info {
     padding: 20px;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .portfolio-info h3 {
     margin-bottom: 10px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .portfolio-info p {
-    color: #666;
+    color: #B0B0B0;
     margin-bottom: 15px;
 }
 
@@ -528,7 +528,7 @@ nav {
 
 /* Contact Section */
 .contact {
-    background-color: #f5f8fa;
+    background-color: var(--background-color);
 }
 
 .contact-container {
@@ -553,7 +553,7 @@ nav {
     width: 40px;
     height: 40px;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: var(--dark-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -581,7 +581,7 @@ nav {
 
 .social-links a:hover {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: var(--dark-color);
     transform: translateY(-3px);
 }
 
@@ -603,7 +603,7 @@ nav {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(74, 107, 175, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
 }
 
 .contact-form textarea {
@@ -614,7 +614,7 @@ nav {
 /* Footer */
 footer {
     background-color: var(--dark-color);
-    color: white;
+    color: var(--light-color);
     padding: 30px 0;
     text-align: center;
 }
@@ -657,14 +657,14 @@ footer {
     .timeline-item.left .timeline-content::after {
         left: -20px;
         right: auto;
-        border-color: transparent white transparent transparent;
+        border-color: transparent var(--background-color) transparent transparent;
     }
 }
 
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
-        background-color: white;
+        background-color: var(--dark-color);
         height: 100vh;
         width: 100%;
         top: 80px;
